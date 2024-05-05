@@ -1,0 +1,39 @@
+---
+const personalImageAlt = "Lucas Sarachu"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-3xl shadow-lg size-16"
+      src="/Lucas Sarachu fondo blanco.jpg"
+      alt={personalImageAlt}
+    />
+
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hola, soy Lucas!
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+     <strong
+      >Entusiasmado de la programación y de la resolución creativa de problemas.</strong
+    >  Explora mis proyectos para ver la fusión de habilidades técnicas y una mente abierta traducirse en resultados excepcionales.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:lucassarachu7@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/lucas-sarachu/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
