@@ -1,8 +1,9 @@
 ---
-const personalImageAlt = "Lucas Sarachu"
-import LinkedInIcon from "@/components/icons/LinkedIn.astro"
-import MailIcon from "@/components/icons/Mail.astro"
-import SocialPill from "@/components/SocialPill.astro"
+const personalImageAlt = "Lucas Sarachu";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import CurriculumIcon from "@/components/icons/Curriculum.astro";
 ---
 
 <div class="max-w-xl">
@@ -12,7 +13,6 @@ import SocialPill from "@/components/SocialPill.astro"
       src="/Lucas Sarachu fondo blanco.jpg"
       alt={personalImageAlt}
     />
-
   </div>
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
@@ -22,9 +22,10 @@ import SocialPill from "@/components/SocialPill.astro"
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-     <strong
+    <strong
       >Entusiasmado de la programación y de la resolución creativa de problemas.</strong
-    >  Explora mis proyectos para ver la fusión de habilidades técnicas y una mente abierta traducirse en resultados excepcionales.
+    > Explora mis proyectos para ver la fusión de habilidades técnicas y una mente
+    abierta traducirse en resultados excepcionales.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:lucassarachu7@gmail.com">
@@ -34,6 +35,10 @@ import SocialPill from "@/components/SocialPill.astro"
     <SocialPill href="https://www.linkedin.com/in/lucas-sarachu/">
       <LinkedInIcon class="size-4" />
       LinkedIn
+    </SocialPill>
+    <SocialPill href="/LucasSarachuCv.pdf" download="LucasSarachuCv.pdf">
+      <CurriculumIcon class="size-4" />
+      Curriculum
     </SocialPill>
   </nav>
 </div>
