@@ -1,5 +1,5 @@
 ---
-const personalImageAlt = "Lucas Sarachu";
+const personalImageAlt = "Chat Bot";
 import LinkedInIcon from "@/components/icons/LinkedIn.astro";
 import MailIcon from "@/components/icons/Mail.astro";
 import SocialPill from "@/components/SocialPill.astro";
@@ -9,36 +9,33 @@ import CurriculumIcon from "@/components/icons/Curriculum.astro";
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
     <img
-      class="rounded-3xl shadow-lg size-16"
-      src="/Lucas Sarachu fondo blanco.webp"
+      class="rounded-full shadow-lg size-32"
+      src="/chatbot.webp"
       alt={personalImageAlt}
     />
   </div>
   <h1
-    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
-  >
-    Hola, soy Lucas!
-  </h1>
-  <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
-  >
-    <strong
-      >Entusiasmado de la programación y de la resolución creativa de problemas.</strong
-    > Explora mis proyectos para ver la fusión de habilidades técnicas y una mente
-    abierta a traducirse en resultados excepcionales.
-  </p>
-  <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="mailto:lucassarachu7@gmail.com">
-      <MailIcon class="size-4" />
-      Contáctame
-    </SocialPill>
-    <SocialPill href="https://www.linkedin.com/in/lucas-sarachu/">
-      <LinkedInIcon class="size-4" />
-      LinkedIn
-    </SocialPill>
-    <SocialPill href="/LucasSarachuCv.pdf" download="LucasSarachuCv.pdf">
-      <CurriculumIcon class="size-4" />
-      Curriculum
-    </SocialPill>
-  </nav>
+  class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+>
+  Bienvenidos a ChatBot Solutions
+</h1>
+<p
+  class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+>
+  <strong>Transforma la interacción con tus clientes</strong> a través de chatbots personalizados que aumentan la eficiencia y mejoran la experiencia del usuario. Descubre cómo podemos ayudar a tu negocio a alcanzar el siguiente nivel.
+</p>
+<nav class="flex flex-wrap gap-4 mt-8">
+  <SocialPill href="mailto:contacto@chatbotsolutions.com">
+    <MailIcon class="size-4" />
+    Contáctanos
+  </SocialPill>
+  <SocialPill href="https://www.linkedin.com/company/chatbotsolutions/">
+    <LinkedInIcon class="size-4" />
+    LinkedIn
+  </SocialPill>
+  <SocialPill href="/ChatBotSolutionsBrochure.pdf" download="ChatBotSolutionsBrochure.pdf">
+    <CurriculumIcon class="size-4" />
+    Descargar Brochure
+  </SocialPill>
+</nav>
 </div>

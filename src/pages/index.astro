@@ -12,14 +12,22 @@ import Hero from "@/components/Hero.astro"
 ---
 
 <Layout
-  title="Lucas Sarachu - Desarrollador y Programador Web"
-  description="Contratame para crear tu aplicación web o móvil. Desarrollador Web Full Stack. Especializado en crear aplicaciones únicas." 
+  title="Tu Solución en Chatbots - Optimiza tu Negocio con Inteligencia Artificial"
+  description="Especialistas en la creación de chatbots personalizados para mejorar la atención al cliente y optimizar procesos. Descubre cómo nuestros chatbots pueden transformar tu negocio." 
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
       <Hero>
-      </slot>
-    </Hero>
+        <h1 class="text-4xl font-bold text-black/80 dark:text-white">
+          Potencia tu Negocio con Chatbots Personalizados
+        </h1>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+          Desarrollamos chatbots que se adaptan a las necesidades de tu empresa, 
+          mejorando la eficiencia y la satisfacción de tus clientes. ¡Transforma tu 
+          negocio hoy mismo!
+        </p>
+        <!-- Aquí podrías agregar un botón de llamada a la acción -->
+      </Hero>
     </SectionContainer>
     <div class="space-y-24">
     <SectionContainer id="experiencia">
@@ -27,7 +35,7 @@ import Hero from "@/components/Hero.astro"
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
       >
         <Briefcase class="size-8" />
-        Experiencia laboral
+        Nuestra Experiencia
       </h2>
       <Experience />
     </SectionContainer>
@@ -37,17 +45,17 @@ import Hero from "@/components/Hero.astro"
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
       >
         <CodeIcon class="size-7" />
-        Proyectos
+        Proyectos Destacados
       </h2>
       <Projects />
     </SectionContainer>
 
-    <SectionContainer id="sobre-mi">
+    <SectionContainer id="sobre-nosotros">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
       >
         <ProfileCheck class="size-8" />
-        Sobre mí
+        Sobre Nosotros
       </h2>
       <AboutMe />
     </SectionContainer>
